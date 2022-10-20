@@ -15,7 +15,7 @@ graph TD;
     Visit-->Payment-parent;
     Payment-parent-->PaymentStatus;
     Payment-parent-->Payment-child;
-    Payment-child-->PaymentStatus;
+    Payment-child-->PaymentStatus-child;
     Payment-parent-->PaymentReport;
     PaymentReport-->GenericApiResponse;
     PaymentReport-->GenericApiRequest
