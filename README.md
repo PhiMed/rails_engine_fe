@@ -6,7 +6,7 @@ Congratulations! You've written your first API. Just like the API you consumed f
 
 Words words words. 
 
-```
+```sh
 git clone <some repo>
 cd some_repo
 bundle
