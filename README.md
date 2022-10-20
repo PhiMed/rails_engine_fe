@@ -8,6 +8,9 @@ How the :
 
 ```mermaid
 graph TD;
+    Client-->Agency;
+    Agency-->PaymentSource;
+    PaymentSource-->Visit;
     Visit-->AccountLookup;
     Visit-->Payment-parent;
     Payment-parent-->Payment-child;
