@@ -4,14 +4,15 @@ Congratulations! You've written your first API. Just like the API you consumed f
 
 ## Setup
 
-Here is a simple flow chart:
+How the :
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    Visit-->AccountLookup;
+    Visit-->Payment(parent);
+    Payment(parent)-->Payment(child);
+    Payment(parent)-->PaymentReport;
+    PaymentReport-->GenericApiResponse
 ```
 
 
