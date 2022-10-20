@@ -2,18 +2,21 @@
 
 Congratulations! You've written your first API. Just like the API you consumed for your week 1 project, your Rails Engine API can be used by other projects now, too. For this challenge, you will create a front end application that will make calls to your backend application, the Rails Engine API you have just created.
 
-## Schema
+## Changes
 
+```diff
+class Account < ApplicationRecord
+  belongs_to :client, inverse_of: :accounts
 
+  has_enumerated :service_type
 
-Words words words. 
-
-```sh
-git clone <some repo>
-cd some_repo
-bundle
-bundle exec rake db:create
-```
+  has_many :accounts_visits, inverse_of: :account
+  has_many :visits, through: :accounts_visits, inverse_of: :accounts
+ +belongs_to :something, through: :accounts_somethings, inverse_of: :accounts
+ -has_many :payment_reports, inverse_of: :account
+ -has_many :accounts_payments, inverse_of: :account
+  has_many :payments, through: :accounts_payments, inverse_of: :accounts
+ ```
 
 Words words words. 
 
