@@ -6,7 +6,7 @@ Congratulations! You've written your first API. Just like the API you consumed f
 
 Just like your week 1 project, this will be a new Rails app. You should fork this repository. 
 
-```sh
+```
 git clone <Rails Engine FE SSH>
 cd rails_engine_fe
 bundle
