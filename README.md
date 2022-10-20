@@ -9,7 +9,7 @@ How the :
 ```mermaid
 graph TD;
     Visit-->AccountLookup;
-    Visit-->Payment(parent);
+    Visit-->Payment-parent;
     Payment-parent-->Payment-child;
     Payment-parent-->PaymentReport;
     PaymentReport-->GenericApiResponse
