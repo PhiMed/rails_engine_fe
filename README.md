@@ -13,9 +13,12 @@ graph TD;
     PaymentSource-->Visit;
     Visit-->AccountLookup;
     Visit-->Payment-parent;
+    Payment-parent-->PaymentStatus;
     Payment-parent-->Payment-child;
+    Payment-child-->PaymentStatus;
     Payment-parent-->PaymentReport;
-    PaymentReport-->GenericApiResponse
+    PaymentReport-->GenericApiResponse;
+    PaymentReport-->GenericApiRequest
 ```
 
 
