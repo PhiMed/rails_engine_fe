@@ -10,8 +10,8 @@ How the :
 graph TD;
     Visit-->AccountLookup;
     Visit-->Payment(parent);
-    Payment<parent>-->Payment<child>;
-    Payment<parent>-->PaymentReport;
+    Payment-parent-->Payment-child;
+    Payment-parent-->PaymentReport;
     PaymentReport-->GenericApiResponse
 ```
 
