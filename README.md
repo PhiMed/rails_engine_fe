@@ -4,22 +4,6 @@ Congratulations! You've written your first API. Just like the API you consumed f
 
 ## Schema
 
-ActiveRecord associations:
-
-```mermaid
-graph TD;
-    Client-->Agency;
-    Agency-->PaymentSource;
-    PaymentSource-->Visit;
-    Visit-->AccountLookup;
-    Visit-->Payment-parent;
-    Payment-parent-->PaymentStatus;
-    Payment-parent-->Payment-child;
-    Payment-child-->PaymentStatus-child;
-    Payment-parent-->PaymentReport;
-    PaymentReport-->GenericApiResponse;
-    PaymentReport-->GenericApiRequest
-```
 
 
 Words words words. 
